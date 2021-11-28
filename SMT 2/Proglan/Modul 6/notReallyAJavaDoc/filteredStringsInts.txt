@@ -1,0 +1,4 @@
+
+Arrays Result:
+Strings: asd apalh 123qwe
+Integers: 123 321321 

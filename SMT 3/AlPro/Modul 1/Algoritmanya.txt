@@ -1,0 +1,23 @@
+[Algoritma Bahasa Indonesia]
+Step 1 : Start
+Step 2 : Input Besar Ordo
+Step 3 : For a=0 sampai a<besarOrdo, serta For b=0 sampai b<besarOrdo, dengan menginput array sesuai nilai [a][b]
+Step 4 : For j=panjang baris array dikurangi satu hingga >=0, serta For i=panjang baris array dikurangi satu hingga >=0, print array kolom sesuai nilai [j],[i] saat ini, lalu print line setelah for i selesai
+Step 5 : Stop
+
+[PseudoCode (bash style)]
+read ordo
+for a in {1..$ordo}
+do
+  for b in {1..$ordo}
+    do
+      read array[a][b]
+    done
+done
+for ((j=ordo; j>=0; j--))
+do
+  for ((i=ordo; i>=0; i--))
+    do
+      echo "${array[j][i]}"
+    done
+done

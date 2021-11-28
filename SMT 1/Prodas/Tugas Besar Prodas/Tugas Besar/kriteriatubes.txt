@@ -1,0 +1,39 @@
+
+
+Tugas Akhir Pemrograman Dasar
+urutan presentasi akan diambil dari isian formulir ini
+* Required
+
+Nama *
+Ananda Rizaldy Aristyo
+
+NIM *
+202010370311440
+
+Judul aplikasi
+Tic Tac Toe
+
+Gambaran Aplikasi
+Permainan Tic-Tac-Toe dengan Bot Level Rendah dan Bot Level Tinggi, dapat juga dimainkan dengan Player 2
+
+Fitur utama dan tambahan dalam program
+Game tic tac toe tradisional dengan tambahan logika bot dalam bermain melawan manusia (player 1)
+
+Sistem baca tulis dalam program
+<stdio.h> (printf, scanf) dengan atribut \r \n \t
+
+Sistem percabangan dalam program
+if else, switch
+
+Sistem perulangan dalam program
+for, do-while
+
+Penggunaan fungsi dalam program
+per tanggal 15 Januari 2021 ada 1 fungsi main dan 6 fungsi void, melibatkan variabel lokal dan universal pada beberapa fungsi, 4 dari 6 fungsi void menggunakan teknik Prototype
+
+Sistem penyimpanan dalam program
+Menyimpan riwayat tiap langkah permainan dalam suatu file
+
+Never submit passwords through Google Forms.
+This form was created inside of Universitas Muhammadiyah Malang. Report Abuse
+Google Forms

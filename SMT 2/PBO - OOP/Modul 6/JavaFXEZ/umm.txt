@@ -1,0 +1,8 @@
+===Data Diri===
+NIM: 
+Nama: 
+Fakultas: 
+Jurusan: 
+Alamat: 
+Kota: 
+Hobby: 

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.Tac.ChildV4</OriginalElement>
+  <nodes>
+    <node x="209.0" y="336.5">com.Tic.Child</node>
+    <node x="399.5" y="0.0">com.APBOJavaNyaRev.Company</node>
+    <node x="614.0" y="325.0">com.Tac.ChildV2</node>
+    <node x="0.0" y="325.0">com.Tac.ChildV4</node>
+    <node x="405.0" y="325.0">com.Tac.ChildV3</node>
+    <node x="0.0" y="513.0">com.APBOJavaNyaRev.SopirJVM</node>
+    <node x="823.0" y="325.0">com.Tac.ChildV5</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.Tac.ChildV4" target="com.APBOJavaNyaRev.Company">
+      <point x="0.0" y="-71.5" />
+      <point x="94.5" y="295.0" />
+      <point x="419.5" y="295.0" />
+      <point x="-80.0" y="137.5" />
+    </edge>
+    <edge source="com.Tac.ChildV3" target="com.APBOJavaNyaRev.Company">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="com.Tac.ChildV5" target="com.APBOJavaNyaRev.Company">
+      <point x="0.0" y="-71.5" />
+      <point x="917.5" y="295.0" />
+      <point x="579.5" y="295.0" />
+      <point x="80.0" y="137.5" />
+    </edge>
+    <edge source="com.Tac.ChildV2" target="com.APBOJavaNyaRev.Company">
+      <point x="0.0" y="-71.5" />
+      <point x="708.5" y="305.0" />
+      <point x="539.5" y="305.0" />
+      <point x="40.0" y="137.5" />
+    </edge>
+    <edge source="com.Tic.Child" target="com.APBOJavaNyaRev.Company">
+      <point x="0.0" y="-60.0" />
+      <point x="297.0" y="305.0" />
+      <point x="459.5" y="305.0" />
+      <point x="-40.0" y="137.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.924701873935264" x="510.0698231392778" y="316.8512359868618" />
+  <SelectedNodes>
+    <node>com.APBOJavaNyaRev.Company</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,12 @@
+1.Informal Problem
+Parameter	:integer positif
+Return		:y adalah perkalian x dan z
+2.Program Spesifikasi
+{|x=x0|&&|x>=0|}
+z=x
+y=x*z
+{|y=x0*z0|}
+3.Defensive
+if x<0 
+  return 0
+

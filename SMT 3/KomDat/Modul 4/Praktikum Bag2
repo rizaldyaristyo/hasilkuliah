@@ -1,0 +1,37 @@
+==========================
+==========================
+==========================
+
+Outbound PDU @31.5
+Ping 172.16.31.5 ke 10.10.10.2
+Source MAC Address : 000A.F3E7.B2DB
+Source IP Address  : 172.16.31.5
+Dest MAC Address : 000C.CF03.D368
+Dest IP Address  : 10.10.10.2
+At Device : 172.16.31.5
+
+Inbound PDU @Router
+Source MAC Address : 000A.F3E7.B2DB
+Source IP Address  : 172.16.31.5
+Dest MAC Address : 000C.CF03.D368
+Dest IP Address  : 10.10.10.2
+At Device : Router
+
+Outbound PDU @Router
+Source MAC Address : 0010.11C0.7663
+Source IP Address  : 172.16.31.5
+Dest MAC Address : 0060.5C11.B8D6
+Dest IP Address  : 10.10.10.2
+At Device : Router
+
+Outbound PDU @AP
+Address 1 : 0060.5C11.B8D6
+Address 2 : 00E0.B0CC.3110
+Address 3 : 0010.11C0.7663
+Source IP Address  : 172.16.31.5
+Dest IP Address  : 10.10.10.2
+At Device : Access Point
+
+==========================
+==========================
+==========================

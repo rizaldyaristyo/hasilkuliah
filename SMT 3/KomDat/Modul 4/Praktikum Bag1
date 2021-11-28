@@ -1,0 +1,70 @@
+====================================
+====================================
+=====================================
+
+Ping PC 31.5 ke 31.2
+Source MAC Address : 000A.F3E7.B2DB
+Source IP Address  : 172.16.31.5
+Dest MAC Address : 0001.C7DB.35C1
+Dest IP Address  : 172.16.31.2
+At Device : 172.16.31.5
+_______________________________
+
+Ping PC 31.3 ke 31.2
+Source MAC Address : 000D.BD4B.7512
+Source IP Address  : 172.16.31.3
+Dest MAC Address : 0001.C7DB.35C1
+Dest IP Address  : 172.16.31.2
+At Device : 172.16.31.3
+_______________________________
+
+Ping PC 31.4 ke 31.5
+Source MAC Address : 0000.0CD2.B500
+Source IP Address  : 172.16.31.4
+Dest MAC Address : 000A.F3E7.B2DB
+Dest IP Address  : 172.16.31.5
+At Device : 172.16.31.4
+
+====================================
+====================================
+====================================
+
+Ping PC 31.5 ke 31.2
+
+PCKanan
+MAC Address : 000A.F3E7.B2DB
+IP Address  : 172.16.31.5
+
+PCKiri
+MAC Address : 0001.C7DB.35C1
+IP Address  : 172.16.31.2
+_______________________________
+
+Ping PC 31.3 ke 31.2
+
+PCKanan
+MAC Address : 000D.BD4B.7512
+IP Address  : 172.16.31.3
+
+PCKiri
+MAC Address : 0001.C7DB.35C1
+IP Address  : 172.16.31.2
+_______________________________
+
+Ping PC 31.4 ke 31.5
+
+PCKiri
+MAC Address : 0000.0CD2.B500
+IP Address  : 172.16.31.4
+
+PCKanan
+MAC Address : 000A.F3E7.B2DB
+IP Address  : 172.16.31.5
+
+
+====================================
+
+
+
+
+

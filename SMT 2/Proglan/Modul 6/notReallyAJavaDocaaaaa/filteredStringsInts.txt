@@ -1,0 +1,7 @@
+
+Arrays Result:
+Strings: 
+Integers: 
+Arrays Result:
+Strings: sdfghj asdfg2345 
+Integers: 234567 234234 

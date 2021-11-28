@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.PBOtelat2.Assassin</OriginalElement>
+  <nodes>
+    <node x="209.00000000000006" y="0.0">com.PBOtelat2.Character</node>
+    <node x="0.0" y="536.0">com.PBOtelat2.Provokator</node>
+    <node x="491.5" y="336.0">com.PBOtelat2.Tank</node>
+    <node x="0.0" y="110.5">com.PBOtelat2.CriticalDamage</node>
+    <node x="321.5" y="336.0">com.PBOtelat2.Warrior</node>
+    <node x="47.25" y="325.0">com.PBOtelat2.Assassin</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.PBOtelat2.Tank" target="com.PBOtelat2.Character">
+      <point x="0.0" y="-72.0" />
+      <point x="562.5" y="300.0" />
+      <point x="521.5" y="300.0" />
+      <point x="125.0" y="137.5" />
+    </edge>
+    <edge source="com.PBOtelat2.Assassin" target="com.PBOtelat2.Character">
+      <point x="47.25" y="-83.0" />
+      <point x="189.0" y="300.0" />
+      <point x="271.50000000000006" y="300.0" />
+      <point x="-125.0" y="137.5" />
+    </edge>
+    <edge source="com.PBOtelat2.Warrior" target="com.PBOtelat2.Character">
+      <point x="2.8421709430404007E-14" y="-72.0" />
+      <point x="0.0" y="137.5" />
+    </edge>
+    <edge source="com.PBOtelat2.Assassin" target="com.PBOtelat2.CriticalDamage">
+      <point x="-47.25" y="-83.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="317.0" y="295.0" />
+  <SelectedNodes>
+    <node>com.PBOtelat2.Assassin</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

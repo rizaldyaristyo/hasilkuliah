@@ -1,0 +1,4 @@
+
+Arrays Result:
+Strings: fhggfg 
+Integers: 123 

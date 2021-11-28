@@ -1,0 +1,45 @@
+Assassin Warrior Tank
+
+
+switch(choice)
+	   P1        P2
+case1	Assassin vs Warrior
+case2	Warrior  vs Tank
+case3	Assassin vs Tank
+
+Assassin always p1
+Warrior can be p1 / p2
+Tank always p2
+
+case1
+while (assassinP1.lifeStatus && warriorP2.lifeStatus) {
+            System.out.println("\n=== TURN " + i + " ===\n- Player 1 Move -");
+            assassinP1.spawnIntro();
+            assassinP1.attack(warriorP2);
+            System.out.println("- Player 2 Move -");
+            warriorP2.spawnIntro();
+            warriorP2.attack(assassinP1);
+            i++;
+        }
+
+case2
+while (warriorP1.lifeStatus && tankP2.lifeStatus) {
+            System.out.println("\n=== TURN " + i + " ===\n- Player 1 Move -");
+            warriorP1.spawnIntro();
+            warriorP1.attack(tankP2);
+            System.out.println("- Player 2 Move -");
+            tankP2.spawnIntro();
+            tankP2.attack(warriorP1);
+            i++;
+        }
+
+case3
+while (assassinP1.lifeStatus && tankP2.lifeStatus) {
+            System.out.println("\n=== TURN " + i + " ===\n- Player 1 Move -");
+            assassinP1.spawnIntro();
+            assassinP1.attack(tankP2);
+            System.out.println("- Player 2 Move -");
+            tankP2.spawnIntro();
+            tankP2.attack(assassinP1);
+            i++;
+        }
