@@ -1,10 +1,10 @@
 package com.queueNya;
 
 class Link{
-    int dData;
+    String dData;
     Link next;
 
-    public Link(int d){
+    public Link(String d){
         dData=d;
     }
     public void displayLink(){
@@ -25,15 +25,15 @@ class FirstLastList{
         return (first==null);
     }
 
-    public void insertLast(int dd){
+    public void insertLast(String dd){
         Link newLink = new Link(dd);
         if(isEmpty())first=newLink;
         else last.next=newLink;
         last=newLink;
     }
 
-    public int deleteFirst(){
-        int temp=first.dData;
+    public String deleteFirst(){
+        String temp=first.dData;
         if (first.next==null) last=null;
         first=first.next;
         return temp;
@@ -73,7 +73,7 @@ class LinkQueue{ //enqueue[ok] dequeue[ok] peek[ok] isEmpty[ok] size[ok]
     public boolean isEmpty(){
         return theList.isEmpty();
     }
-    public void enqueue(int j){
+    public void enqueue(String j){
         theList.insertLast(j);
     }
     public void dequeue(){
@@ -96,8 +96,8 @@ public class Main {
 
     public static void main(String[] args) {
         LinkQueue queue = new LinkQueue();
-        queue.enqueue(10);
-        queue.enqueue(40);
+        queue.enqueue("a");
+        queue.enqueue("b");
         queue.displayQueue();
         queue.peek();
         queue.size();
