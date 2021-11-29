@@ -1,7 +1,5 @@
 package com.antreanfx.antreanfx;
-
 import javafx.application.Application;
-import javafx.beans.Observable;
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -15,17 +13,11 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-
-import java.util.concurrent.atomic.AtomicInteger;
-
 class Link{
     String dData;
     Link next;
     public Link(String d){
         dData=d;
-    }
-    public void displayLink(){
-        System.out.print(dData+" ");
     }
     public String displayLinkReturn(){
         return dData;
@@ -52,32 +44,22 @@ class FirstLastList{
         last=newLink;
     }
 
-    public String deleteFirst(){
-        String temp=first.dData;
+    public void deleteFirst(){
         if (first.next==null) last=null;
         first=first.next;
-        return temp;
     }
 
-    public void displayList(){
-        Link current = first;
-        while (current!=null){
-            current.displayLink();
-            current=current.next;
-        }
-        System.out.println();
-    }
 
     public String displayHead(){
         Link current=first;
         if(current!=null) return current.displayLinkReturn();
-        else return  "Kosong!";
+        else return "Kosong!";
     }
 
     public String displayLast(){
         Link current=last;
         if(current!=null) return current.displayLinkReturn();
-        else return  "Kosong!";
+        else return "Kosong!";
     }
 
     public int queueSize(){
@@ -102,12 +84,8 @@ class LinkQueue{ //enqueue[ok] dequeue[ok] peek[ok] isEmpty[ok] size[ok]
     public void enqueue(String j){
         theList.insertLast(j);
     }
-    public String dequeue(){
-        return theList.deleteFirst();
-    }
-    public void displayQueue(){
-        System.out.print("Queue (Head-->Tail) : ");
-        theList.displayList();
+    public void dequeue(){
+        theList.deleteFirst();
     }
     public String peek(){
         return theList.displayHead();
@@ -121,37 +99,47 @@ class LinkQueue{ //enqueue[ok] dequeue[ok] peek[ok] isEmpty[ok] size[ok]
 }
 
 public class HelloApplication extends Application {
-    AtomicInteger increment= new AtomicInteger(0);
     @Override
     public void start(Stage stage) {
         LinkQueue queue = new LinkQueue();
-
         GridPane gp = new GridPane();
         gp.setAlignment(Pos.CENTER);
-        gp.setHgap(10);
-        gp.setVgap(10);
+        gp.setHgap(10); gp.setVgap(10);
         gp.setPadding(new Insets(25,25,25,25));
         Scene sc = new Scene(gp,480,280);
         stage.setScene(sc);
         stage.setTitle("!!-=AntreFX=-!!");
+
         Text title = new Text("AntreanFX");
         title.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20));
+
         Button tambah = new Button("Tambahkan Nama Ke Antrean");
         Button next = new Button("Antrean Selanjutnya");
+
         Text antreanSekarang=new Text("Antrean Sekarang");
         String isEmpty;
         if (queue.isEmpty()) isEmpty = "Kosong";
         else isEmpty = queue.peek();
+
         Text outEntry=new Text(isEmpty);
         outEntry.setFont(Font.font("Tahoma", FontWeight.NORMAL, 30));
+
         Text antreanTerbaru=new Text("Antrean Terbaru");
         Text latestEntry=new Text(isEmpty);
         latestEntry.setFont(Font.font("Tahoma", FontWeight.NORMAL, 30));
+
         Text nama = new Text("Nama: ");
         TextField tf = new TextField();
         HBox hBox = new HBox();
         ObservableList hboxList = hBox.getChildren();
         hboxList.addAll(nama,tf);
+
+        Text panjangAntrean = new Text("Panjang Antrean: ");
+        Text queueSize = new Text(String.valueOf(queue.size()));
+        HBox hBox2 = new HBox();
+        ObservableList hboxList2 = hBox2.getChildren();
+        hboxList2.addAll(panjangAntrean,queueSize);
+
         gp.add(title,0,0);
         gp.add(hBox,1,0);
         gp.add(tambah,1,1);
@@ -160,24 +148,27 @@ public class HelloApplication extends Application {
         gp.add(outEntry,1,3);
         gp.add(antreanTerbaru,0,2);
         gp.add(latestEntry,0,3);
+        gp.add(hBox2,0,4);
+
         tambah.setOnAction(plus->{
             queue.enqueue(tf.getText());
             System.out.println("masuk: "+tf.getText());
             tf.clear();
             outEntry.setText(queue.peek());
             latestEntry.setText(queue.peekNext());
+            queueSize.setText(String.valueOf(queue.size()));
             stage.setScene(sc);
             stage.show();
         });
-
         next.setOnAction(minus->{
+            System.out.println("peek: "+queue.peek());
             queue.dequeue();
             outEntry.setText(queue.peek());
             latestEntry.setText(queue.peekNext());
+            queueSize.setText(String.valueOf(queue.size()));
             stage.setScene(sc);
             stage.show();
         });
-
         stage.show();
     }
 
