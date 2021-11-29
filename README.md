@@ -2,12 +2,14 @@
 <h3 align="center">Kodingan Kuliah Pemrograman, yang bakal w update berkala</h3>
 <br>
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=ARSTCreations&label=Profile%20views&color=0e75b6&style=flat" alt="ARSTCreations" />
-   hiks :")
+<p align="center"> 
+   <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+   <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant 2.1" />
+   <img src="https://komarev.com/ghpvc/?username=ARSTCreations&label=Profile%20views&color=0e75b6&style=flat" alt="ARSTCreations" /> hiks :")
 </p>
-
+   
 <p align="center">
-  🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br><b>DILARANG MENYALIN!!! <br>🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br>Repo ini hanya untuk keperluan edukasi dan bukan sebagai media pendukung kecurangan</b><br>
+  🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br><b>🚫DILARANG MENYALIN!!!🚫<br>🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br>Repo ini hanya untuk keperluan edukasi dan bukan sebagai media pendukung kecurangan</b><br>
 </p>
 
 <br>🧑🏾‍💻 Pull Request Bikin Folder Baru Dengan Nama Sendiri<br>
