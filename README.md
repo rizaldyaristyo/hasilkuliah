@@ -5,6 +5,7 @@
 <p align="center"> 
    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
    <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant 2.1" />
+   <img src="https://img.shields.io/badge/Language-%F0%9F%87%AE%F0%9F%87%A9%20indonesian-red.svg" alt="Language: Indonesian" />
    <img src="https://komarev.com/ghpvc/?username=ARSTCreations&label=Profile%20views&color=0e75b6&style=flat" alt="ARSTCreations" /> hiks :")
 </p>
    
