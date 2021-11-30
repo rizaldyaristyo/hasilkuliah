@@ -14,7 +14,7 @@ class Search{
             System.out.println("\n"+stringDD[baris][tengah]+" berada di "+baris+","+tengah);
             return;
         }
-        else if(awal==tengah||akhir==tengah) {
+        else if(awal==tengah&&akhir==tengah) {
             if (input.equals(stringDD[baris][tengah + 1])) {
                 System.out.println("\n" + stringDD[baris][tengah + 1] + " berada di " + baris + "," + (tengah+1));
                 return;
