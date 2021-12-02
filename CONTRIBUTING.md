@@ -8,9 +8,10 @@ Harap dicatat kami memiliki kode etik, harap ikuti dalam semua interaksi Anda te
 ## Proses <i>Pull Request</i>
 
 1. Ajukan <i>Issue</i> yang relevan terlebih dahulu.
-2. Buat Folder baru yang dinamai sendiri, folder ini berisi salinan kode proyek yang ingin atau telah dimodifikasi.<br>Tidak diperkenankan mengubah Kode yang telah tersedia di repositori ini
-3. Ajukan dan hubungkan <i>Pull Request</i> dengan <i>Issue</i> yang telah dibuat sebelumnya
-4. <i>Merge akan dilakukan apabila disetujui oleh pengelola repositori</i>
+2. <i>Fork</i> Repositori ini lalu buat <i>Branch</i> tersendiri
+3. Buat Folder baru yang dinamai sendiri, folder ini berisi salinan kode proyek yang ingin atau telah dimodifikasi.<br>Tidak diperkenankan mengubah Kode yang telah tersedia di repositori ini
+4. Ajukan dan hubungkan <i>Pull Request</i> dengan <i>Issue</i> yang telah dibuat sebelumnya
+5. <i>Merge akan dilakukan apabila disetujui oleh pengelola repositori</i>
 
 
 ## Pemegang Akses <i>Push</i>
