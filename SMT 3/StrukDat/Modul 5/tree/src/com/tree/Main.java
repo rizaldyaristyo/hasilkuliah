@@ -1,5 +1,7 @@
 package com.tree;
 
+import java.util.Scanner;
+
 class Node{
     String data;
     Node left;
@@ -80,12 +82,10 @@ public class Main {
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree();
         StringBuilder stringBuilder = new StringBuilder();
-        binaryTree.NewNode("20");
-        binaryTree.NewNode("2");
-        binaryTree.NewNode("25");
-        binaryTree.NewNode("37");
-        binaryTree.NewNode("16");
-        binaryTree.NewNode("17");
+        Scanner inputan = new Scanner(System.in);
+        System.out.print("Input: ");
+        String inputUser = inputan.nextLine();
+        for (int i=0;i<inputUser.length();i++) binaryTree.NewNode(String.valueOf(inputUser.charAt(i)));
         binaryTree.showTree(binaryTree.root,stringBuilder,"","",false,true);
         System.out.println("\npreOrder  : ");
         binaryTree.preOrder(binaryTree.root);
