@@ -27,6 +27,39 @@ class BinaryTree{
         }
         return root;
     }
+
+    void showTree(Node node, StringBuilder stringBuilder, String garisLurus, String garisCabang, boolean garisNggaSih,boolean firstNggaSih) {
+        if (node!=null){
+            stringBuilder.append(garisLurus);
+            stringBuilder.append(garisCabang);
+            if (firstNggaSih) stringBuilder.append("    ");
+            stringBuilder.append(node.data);
+            stringBuilder.append("\n");
+
+            StringBuilder tambahGarisLurus = new StringBuilder(garisLurus);
+            if (garisNggaSih) tambahGarisLurus.append("│  ");
+            else tambahGarisLurus.append("    ");
+
+            String garisLurusBaru = tambahGarisLurus.toString();
+            String tunjukKanan = "└──";
+            String tunjukKiri;
+            if (node.right != null) tunjukKiri = "├──";
+            else tunjukKiri = "└──";
+
+            System.out.println(stringBuilder);
+
+            showTree(node.left,stringBuilder,garisLurusBaru,tunjukKiri,node.right!=null,false);
+            showTree(node.right,stringBuilder,garisLurusBaru,tunjukKanan,false,false);
+        }
+    }
+
+    void preOrder(Node node) {
+        if (node!=null){
+            System.out.print(node.data + " ");
+            preOrder(node.left);
+            preOrder(node.right);
+        }
+    }
     public void inOrder(Node node){
         if(node!=null){
             inOrder(node.left);
@@ -41,43 +74,24 @@ class BinaryTree{
             System.out.print(node.data + " ");
         }
     }
-    void preOrder(Node node) {
-        if (node!=null){
-            System.out.print(node.data + " ");
-            preOrder(node.left);
-            preOrder(node.right);
-        }
-    }
 }
 
 public class Main {
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree();
+        StringBuilder stringBuilder = new StringBuilder();
         binaryTree.NewNode("20");
         binaryTree.NewNode("2");
         binaryTree.NewNode("25");
         binaryTree.NewNode("37");
         binaryTree.NewNode("16");
+        binaryTree.NewNode("17");
+        binaryTree.showTree(binaryTree.root,stringBuilder,"","",false,true);
         System.out.println("\npreOrder  : ");
         binaryTree.preOrder(binaryTree.root);
         System.out.println("\ninOrder   : ");
         binaryTree.inOrder(binaryTree.root);
         System.out.println("\npostOrder : ");
         binaryTree.postOrder(binaryTree.root);
-
-
-        binaryTree = new BinaryTree();
-        binaryTree.NewNode("A");
-        binaryTree.NewNode("B");
-        binaryTree.NewNode("C");
-        binaryTree.NewNode("D");
-        binaryTree.NewNode("E");
-        System.out.println("\npreOrder  : ");
-        binaryTree.preOrder(binaryTree.root);
-        System.out.println("\ninOrder   : ");
-        binaryTree.inOrder(binaryTree.root);
-        System.out.println("\npostOrder : ");
-        binaryTree.postOrder(binaryTree.root);
-
     }
 }
