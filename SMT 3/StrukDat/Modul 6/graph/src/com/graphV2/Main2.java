@@ -5,17 +5,16 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 class Graph {
-    private int panjangArrayExternal;
-    private LinkedList<Integer> linkedList[];
+    int panjangArrayExternal;
+    LinkedList<Integer>[] linkedList;
 
     Graph(int panjangArray) {
         panjangArrayExternal = panjangArray;
         linkedList = new LinkedList[panjangArray];
-        for (int i = 0; i < panjangArray; ++i)
-            linkedList[i] = new LinkedList();
+        for (int i = 0; i < panjangArray; ++i) linkedList[i] = new LinkedList();
     }
 
-    void addEdge(int dari, int ke) {
+    void directedGraph(int dari, int ke) {
         linkedList[dari].add(ke);
     }
 
@@ -56,36 +55,35 @@ class Graph {
 }
 public class Main2{
     public static void main(String args[]) {
-        Graph g = new Graph(12);
+        Graph graph = new Graph(12);
 
-        g.addEdge(1, 2);
-        g.addEdge(2, 1);
-        g.addEdge(2, 5);
-        g.addEdge(5, 2);
-        g.addEdge(5, 3);
-        g.addEdge(5, 7);
-        g.addEdge(5, 9);
-        g.addEdge(9, 5);
-        g.addEdge(9, 8);
-        g.addEdge(8, 9);
-        g.addEdge(8, 11);
-        g.addEdge(11, 10);
-        g.addEdge(11, 7);
-        g.addEdge(7,  11);
-        g.addEdge(7, 6);
-        g.addEdge(6, 7);
-        g.addEdge(1, 4);
-        g.addEdge(4, 6);
+        graph.directedGraph(1, 2);
+        graph.directedGraph(2, 1);
+        graph.directedGraph(2, 5);
+        graph.directedGraph(5, 2);
+        graph.directedGraph(5, 3);
+        graph.directedGraph(5, 7);
+        graph.directedGraph(5, 9);
+        graph.directedGraph(9, 5);
+        graph.directedGraph(9, 8);
+        graph.directedGraph(8, 9);
+        graph.directedGraph(8, 11);
+        graph.directedGraph(11, 10);
+        graph.directedGraph(11, 7);
+        graph.directedGraph(7,  11);
+        graph.directedGraph(7, 6);
+        graph.directedGraph(6, 7);
+        graph.directedGraph(1, 4);
+        graph.directedGraph(4, 6);
 
         int searchThis;
-
         while (true){
             Scanner inputan = new Scanner(System.in);
             searchThis = inputan.nextInt();
             System.out.print("\nDFS: ");
-            g.DFS(searchThis);
+            graph.DFS(searchThis);
             System.out.print("\nBFS: ");
-            g.BFS(searchThis);
+            graph.BFS(searchThis);
             System.out.println();
         }
     }
