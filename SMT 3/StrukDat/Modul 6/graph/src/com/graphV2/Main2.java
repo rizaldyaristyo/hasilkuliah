@@ -58,23 +58,23 @@ public class Main2{
         Graph graph = new Graph(12);
 
         graph.directedGraph(1, 2);
+        graph.directedGraph(1, 4);
         graph.directedGraph(2, 1);
         graph.directedGraph(2, 5);
+        graph.directedGraph(4, 6);
         graph.directedGraph(5, 2);
         graph.directedGraph(5, 3);
         graph.directedGraph(5, 7);
         graph.directedGraph(5, 9);
+        graph.directedGraph(6, 7);
         graph.directedGraph(9, 5);
         graph.directedGraph(9, 8);
         graph.directedGraph(8, 9);
         graph.directedGraph(8, 11);
-        graph.directedGraph(11, 10);
-        graph.directedGraph(11, 7);
-        graph.directedGraph(7,  11);
         graph.directedGraph(7, 6);
-        graph.directedGraph(6, 7);
-        graph.directedGraph(1, 4);
-        graph.directedGraph(4, 6);
+        graph.directedGraph(7,  11);
+        graph.directedGraph(11, 7);
+        graph.directedGraph(11, 10);
 
         int searchThis;
         while (true){
