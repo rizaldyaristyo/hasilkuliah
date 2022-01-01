@@ -1,5 +1,5 @@
 <h1 align="center">hasilkuliah ARSTCreations</h1>
-<h3 align="center">Kodingan Kuliah Pemrograman, yang bakal w update berkala</h3>
+<h3 align="center">Kodingan Kuliah Pemrograman, yang bakal we update berkala</h3>
 <br>
 
 <p align="center"> 
