@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E0D7D226-B033-0BED-5858-EEA92F185CDA" name="PEMBAYARAN">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:27:47 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="KWITANSI" id="EBD1572A-549A-5707-46DB-7630BC0FB62C">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:27:56 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMOR PESANAN" id="334A3A6F-E8D6-7ED1-D57E-69BF8E72E5B9">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:58:10 UTC</createdTime>
+<generatorID>98C08AEE-7B53-2ED1-7431-FA0190FA7E2C</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<referedAttribute>9B5F58C1-1510-37E2-AF44-D464C7B29C6C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="095FF8A1-B33C-C273-BAA2-5C6D4BED559E">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:58:18 UTC</createdTime>
+<generatorID>72A082E4-5F96-1B62-7E7F-D922B4C6BA7A</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<referedAttribute>0D26A8CF-BA68-5846-41B3-4D6562B2EE55</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09918CDA-DA40-9BA4-C9AF-9652B7C184EC" name="PEMBAYARAN PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:58:10 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>334A3A6F-E8D6-7ED1-D57E-69BF8E72E5B9</attributeRef>
+<attributeRef>095FF8A1-B33C-C273-BAA2-5C6D4BED559E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

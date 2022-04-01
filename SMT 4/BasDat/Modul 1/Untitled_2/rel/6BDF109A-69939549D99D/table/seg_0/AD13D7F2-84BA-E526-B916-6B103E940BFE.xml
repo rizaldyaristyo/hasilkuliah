@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD13D7F2-84BA-E526-B916-6B103E940BFE" name="PEGAWAI">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>3A650458-1FDD-52CA-9368-A0D6D089D942</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="062246AF-E1F8-75F4-F6DD-91109839E76E">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>BB96C99E-E451-BF64-3081-AD5BBE60A16B</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAMA_DEPAN" id="C522E90A-3AE2-EA5A-AA12-FE819A20390A">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>B02D8537-91FB-E4CD-4BA1-9EF787C32C35</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAMA_BELAKANG" id="6EEA9549-5370-9D89-1181-80628241D504">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>0227D46E-2C1F-3FBA-C2F8-7E8437FF651C</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANGGAL_LAHIR" id="B17E7AD3-E8EC-3B27-D198-FB662ACE0092">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>6CD20EEA-D7F6-DDF8-DA68-E3C427FFDB84</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GAJI" id="6941C865-01AA-7E6F-777C-E567D47D4A24">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>E3407AFD-6B02-F485-C60D-14EFFB4B8320</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TARGET_PENUALAN" id="62CF5970-AACC-AC95-AB93-14C9E5462D45">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>F2471367-A40B-FC6B-74E3-8D4357549211</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8A8917E-37D4-C01D-65B4-58FA9B104663" name="PEGAWAI_PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>5BE136D4-7C85-4F0C-2D2E-C81E7F1B94A6</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="062246AF-E1F8-75F4-F6DD-91109839E76E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

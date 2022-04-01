@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="178073ED-DDAA-2241-5FCB-77379E025259" name="PESANAN">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>FC7B950A-F6B2-AA99-75A5-6D9368C0EDEC</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOMOR_PESANAN" id="8C4004B0-B009-B0D1-C568-06D2B8EFD844">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>9B5F58C1-1510-37E2-AF44-D464C7B29C6C</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TANGGAL_PESANAN" id="86550971-4F3C-4490-CB25-4A4231995C55">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>B9DA6234-342C-BD1D-20D5-BC3E2F342027</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL_PESANAN" id="93AA6E09-505E-2BEE-9D4B-B880463EB62A">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>19D13795-950D-6180-68FD-2DFBDA77D8A4</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3CD1E37-7D78-6D58-BE70-DED6882C49D0" name="PESANAN_PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>132DB7B4-7A82-1AFC-F623-4D5F1A2856CF</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C4004B0-B009-B0D1-C568-06D2B8EFD844"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

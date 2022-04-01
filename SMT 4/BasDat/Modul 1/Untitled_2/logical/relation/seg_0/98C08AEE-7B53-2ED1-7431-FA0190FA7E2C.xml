@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_13" directorySegmentName="seg_0" id="98C08AEE-7B53-2ED1-7431-FA0190FA7E2C">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:58:10 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<sourcePk>132DB7B4-7A82-1AFC-F623-4D5F1A2856CF</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>dibeli oleh</nameOnSource>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC7B950A-F6B2-AA99-75A5-6D9368C0EDEC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E0D7D226-B033-0BED-5858-EEA92F185CDA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

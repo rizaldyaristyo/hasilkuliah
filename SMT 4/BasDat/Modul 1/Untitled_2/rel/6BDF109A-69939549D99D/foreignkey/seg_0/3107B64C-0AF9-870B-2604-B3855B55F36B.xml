@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3107B64C-0AF9-870B-2604-B3855B55F36B" containerWithKeyObject="05284618-A25E-6132-6137-FAB6ED06AF66" localFKIndex="343B10EA-7577-D2F9-3327-DBB8A32925BA" name="JENIS_SKINCARE_KATALOG_PROMO_FK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>5DD7A502-54BB-29BA-2A7A-38AA96F89845</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<referredTableLongName>KATALOG_PROMO</referredTableLongName>
+<arc>CC0C0699-EE8A-6D5A-93C7-805760E8596E</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3E3F3A88-1D68-CA03-61D4-AB96987E10E9</referredTableID>
+<keyObject>F34CD1EB-94B9-339C-A64E-48658738110F</keyObject>
+<referredKeyID>F34CD1EB-94B9-339C-A64E-48658738110F</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>KODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

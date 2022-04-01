@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A288FDE-0BB7-BAA1-49CE-BF0722F61BF6" name="PELANGGAN">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>8D959EA2-BB40-BD1C-4427-BE227DAE931A</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9BAA5B6F-1F9F-06FD-2C5D-72502E975CE2">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>0D26A8CF-BA68-5846-41B3-4D6562B2EE55</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAMA_DEPAN" id="7F10E59F-4598-B8E6-9406-32D65FC6B036">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>97A98910-F6A3-6136-5E8C-DD4548CCF33D</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAMA_BELAKANG" id="FC080249-6850-49CF-0014-4E5CCE77F31F">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>C904EEBC-BF08-0BBA-941D-05A787308544</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALAMAT" id="5032A1EE-FD61-B5DF-54C4-8B25D6EDEFA2">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>9E87FB5B-44B1-0A67-B790-C9FA6E943AB6</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="KOTA" id="7CDA48FB-6A06-A4C5-A198-B4B9C789C542">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>9C22FBD4-DCE4-1B4C-2ED1-4BA5C92942E3</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NO_HP" id="BBCEBB4E-0E80-D180-D70B-5E04549C608E">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>0490BAA0-760E-751D-52B2-7EFBF286815B</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="715DC98F-FC1A-BFBF-8209-A41D1C6BBC50" name="PELANGGAN_PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>51BCB0BA-F61F-F13B-D4C9-C57733C669AA</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BAA5B6F-1F9F-06FD-2C5D-72502E975CE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

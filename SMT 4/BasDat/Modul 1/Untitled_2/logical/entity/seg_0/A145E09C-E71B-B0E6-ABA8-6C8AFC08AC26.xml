@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A145E09C-E71B-B0E6-ABA8-6C8AFC08AC26" name="JENIS SKINCARE">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:10 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="59F9E211-03A4-3281-6732-79C4C7596E18">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:20 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESKRIPSI" id="1024A5CF-2EAD-38DF-0938-A0D76E1F4E21">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:27 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HARGA" id="76D7A631-D9FE-6B89-4664-EF2F35551A84">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:33 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KODE" id="4EBEC11D-BB3B-3906-95B6-4D3BF83E1F90">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:51:59 UTC</createdTime>
+<generatorID>5DD7A502-54BB-29BA-2A7A-38AA96F89845</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<referedAttribute>83C7735C-2947-AD10-9826-BF4C6F28E7B2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="KODE1" id="5CAC9C22-AE48-B91D-64F5-0D9B164BF0DF">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:52:05 UTC</createdTime>
+<generatorID>74D54693-3C83-E93F-D77E-A5ECA9E129A9</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<referedAttribute>1EAB6B84-1813-D58C-6CF4-8DE0CC7C019A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMOR PESANAN" id="2B8EE0A7-4213-CBF7-94C3-D4393215F70E">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:53:01 UTC</createdTime>
+<generatorID>993B4276-DABF-7789-16A2-031760266B55</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<referedAttribute>9B5F58C1-1510-37E2-AF44-D464C7B29C6C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7307687-CD21-D4C7-1DBC-CB550E009B1A" name="JENIS SKINCARE PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:24 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>59F9E211-03A4-3281-6732-79C4C7596E18</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

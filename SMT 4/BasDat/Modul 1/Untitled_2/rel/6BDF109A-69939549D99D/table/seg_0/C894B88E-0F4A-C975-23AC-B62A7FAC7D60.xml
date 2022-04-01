@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C894B88E-0F4A-C975-23AC-B62A7FAC7D60" name="KATALOG_REGULER">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>483B1217-74A5-DBA6-A93A-B9526F31F6C1</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KODE" id="68D1C52F-93D8-F006-79D4-6DC8051FAEEF">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>1EAB6B84-1813-D58C-6CF4-8DE0CC7C019A</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPE" id="D566DC49-1E7C-3200-DB9D-A03AE10F4A6E">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>8E89176B-F9B8-6F1B-0A84-6AB739743C51</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF8BA2C5-893C-A0F6-59E4-1E07A18B26AC" name="KATALOG_REGULER_PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>E3376EEE-D005-8242-A9BB-E729AED09D02</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68D1C52F-93D8-F006-79D4-6DC8051FAEEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

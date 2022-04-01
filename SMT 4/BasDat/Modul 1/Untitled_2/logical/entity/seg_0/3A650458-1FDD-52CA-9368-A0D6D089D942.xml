@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A650458-1FDD-52CA-9368-A0D6D089D942" name="PEGAWAI">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:39:29 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="BB96C99E-E451-BF64-3081-AD5BBE60A16B">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:39:38 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAMA DEPAN" id="B02D8537-91FB-E4CD-4BA1-9EF787C32C35">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:39:43 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAMA BELAKANG" id="0227D46E-2C1F-3FBA-C2F8-7E8437FF651C">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:39:48 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TANGGAL LAHIR" id="6CD20EEA-D7F6-DDF8-DA68-E3C427FFDB84">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:39:53 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GAJI" id="E3407AFD-6B02-F485-C60D-14EFFB4B8320">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:40:00 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TARGET PENUALAN" id="F2471367-A40B-FC6B-74E3-8D4357549211">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:40:13 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5BE136D4-7C85-4F0C-2D2E-C81E7F1B94A6" name="PEGAWAI PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:39:42 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BB96C99E-E451-BF64-3081-AD5BBE60A16B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

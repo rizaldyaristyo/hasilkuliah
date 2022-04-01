@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25C07BE7-6A59-04DB-464C-2016279427A8" name="AUDITOR">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>55140A17-AF5A-D4BD-7622-2C5A09F51C44</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B8F68B21-2ECB-FC31-FBE9-12EE71F1AB83">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>BB96C99E-E451-BF64-3081-AD5BBE60A16B</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49419C12-DE97-CD05-D77F-7120817A341B" referredColumn="062246AF-E1F8-75F4-F6DD-91109839E76E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88A528BF-7B47-8C82-23EA-F0819E57DE85" name="AUDITOR_PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>5BE136D4-7C85-4F0C-2D2E-C81E7F1B94A6</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8F68B21-2ECB-FC31-FBE9-12EE71F1AB83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A898CB75-BB99-90E3-FF63-76F92E91837A" name="AUDITOR_PEGAWAI_FK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>A84C7BE1-F389-154B-D7B9-984F0F6B4626</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8F68B21-2ECB-FC31-FBE9-12EE71F1AB83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

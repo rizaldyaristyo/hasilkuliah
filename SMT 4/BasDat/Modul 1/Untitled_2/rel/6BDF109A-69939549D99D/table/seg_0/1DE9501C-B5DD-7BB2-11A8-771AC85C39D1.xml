@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1DE9501C-B5DD-7BB2-11A8-771AC85C39D1" name="Relation_16">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PELANGGAN_ID" id="6D9D148E-8E4D-68AC-D63F-56DB2525F407">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FD06B0D-91BE-3D58-831A-BA52CF333325" referredColumn="9BAA5B6F-1F9F-06FD-2C5D-72502E975CE2"/>
+</associations>
+</Column>
+<Column name="PEGAWAI_ID" id="4C8903D7-4BD1-ADAA-C4C5-4BCA4CEB5622">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E68C2624-25BB-3C6B-028E-A8F39C63B4EB" referredColumn="062246AF-E1F8-75F4-F6DD-91109839E76E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF888BA4-2D5C-FD60-5078-5259DC2AA997" name="Relation_16_PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D9D148E-8E4D-68AC-D63F-56DB2525F407"/>
+<colUsage columnID="4C8903D7-4BD1-ADAA-C4C5-4BCA4CEB5622"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB1AB257-E5F6-BB70-9A1E-0DAC50E69E15" name="Relation_16_PELANGGAN_FK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>7BECE6BE-9D5C-30B0-4769-D18CC6EAC6AD</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D9D148E-8E4D-68AC-D63F-56DB2525F407"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E741E7CB-D42D-EF37-F1A9-94E5A8FF7B46" name="Relation_16_PEGAWAI_FK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 10:01:39 UTC</createdTime>
+<generatorID>7BECE6BE-9D5C-30B0-4769-D18CC6EAC6AD</generatorID>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C8903D7-4BD1-ADAA-C4C5-4BCA4CEB5622"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

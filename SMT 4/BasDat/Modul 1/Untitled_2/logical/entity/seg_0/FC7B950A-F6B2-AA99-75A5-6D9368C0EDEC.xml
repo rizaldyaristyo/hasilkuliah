@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC7B950A-F6B2-AA99-75A5-6D9368C0EDEC" name="PESANAN">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:46 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NOMOR PESANAN" id="9B5F58C1-1510-37E2-AF44-D464C7B29C6C">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:52 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TANGGAL PESANAN" id="B9DA6234-342C-BD1D-20D5-BC3E2F342027">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:57 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TOTAL PESANAN" id="19D13795-950D-6180-68FD-2DFBDA77D8A4">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:27:03 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="132DB7B4-7A82-1AFC-F623-4D5F1A2856CF" name="PESANAN PK">
+<createdBy>kblk</createdBy>
+<createdTime>2022-03-27 09:26:56 UTC</createdTime>
+<ownerDesignName>Untitled_2</ownerDesignName>
+<engineerTo>
+<item key="6BDF109A-1A4B-7833-F4D6-69939549D99D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B5F58C1-1510-37E2-AF44-D464C7B29C6C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
