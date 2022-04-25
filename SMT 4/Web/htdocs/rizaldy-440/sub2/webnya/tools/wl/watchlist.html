@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="watchlist.js"></script>
+  </head>
+  <style>
+    td,
+    tr,
+    th {
+      border: 1px solid black;
+      min-width: 200px;
+    }
+  </style>
+  <body>
+    <div style="display: flex">
+      <input id="movieTitleEntry" type="text" placeholder="Movie Title" />
+      <input id="movieRatingEntry" type="text" placeholder="Movie Rating" />
+    </div style="display: flex">
+      <button onclick="addMovie()">Add New Entry</button>
+      <input id="search" type="text" placeholder="Search" />
+    </div>
+    <table>
+      <tr>
+        <th><a onclick="sortdis('title')">Movie Title</a></th>
+        <th><a onclick="sortdis('rating')">Movie Rating</a></th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    <table id="tablenya" style="border: 2px; text-align: center"></table>
+  </body>
+</html>
