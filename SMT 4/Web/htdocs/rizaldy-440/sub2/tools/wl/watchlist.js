@@ -1,8 +1,9 @@
 function render() {
   var gudang = localStorage.getItem("gudang");
+  $("#tablenya").empty();
+  $("#tablenya").append("<tr><th><a onclick=\"sortdis('title')\">Movie Title</a></th><th><a onclick=\"sortdis('rating')\">Movie Rating</a></th><th><a onclick=\"sortdis('id')\">Actions</a></th></tr>;");
   if (gudang) {
     var arrai = JSON.parse(gudang);
-    $("#tablenya").empty();
     arrai.forEach((element) => {
       $("#tablenya").append('<tr class="isi" data-id=' + element.id + ">\n<td>" + element.title + "</td>\n<td>" + element.rating + '</td>\n<td><button id="delete" onclick="deletdis(this)">Delete</button></td>\n</tr>');
     });
@@ -40,6 +41,8 @@ function addMovie() {
   arrai.push(databaru);
   localStorage.setItem("gudang", JSON.stringify(arrai));
   render();
+  $("#movieTitleEntry").val("");
+  $("#movieRatingEntry").val("");
 }
 
 function deletdis(konteks) {
@@ -70,5 +73,3 @@ function sortdis(attribut) {
   }
   render();
 }
-
-function searchdis() {}
