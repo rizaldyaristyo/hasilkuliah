@@ -1,13 +1,16 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kegiatantwo/pageone.dart';
 import 'package:kegiatantwo/preferences.dart';
 import 'package:kegiatantwo/dummy_data.dart';
 import 'package:flutter/services.dart';
+import 'package:kegiatantwo/auth.dart';
 
 const List<Map<String, dynamic>> accountlist = DummyData.data;
 int? selectedIndex;
+AuthenticationService service = AuthenticationService(FirebaseAuth.instance);
 
 class AccountPage extends StatefulWidget {
   const AccountPage({Key? key}) : super(key: key);
@@ -63,7 +66,7 @@ class _AccountPageState extends State<AccountPage> {
                     showDialog(
                       context: context,
                       builder: (BuildContext dialogContext) {
-                        return AccountSwitcher();
+                        return PasswordPrompt();
                       },
                     );
                   },
@@ -111,7 +114,8 @@ class _AccountPageState extends State<AccountPage> {
                       Padding(padding: EdgeInsets.only(top: 10)),
                       GestureDetector(
                         onTap: () async {
-                          await deletePref();
+                          // await deletePref();
+                          service.signOut();
                           SystemNavigator.pop();
                         },
                         child: Row(children: [
@@ -134,48 +138,41 @@ class _AccountPageState extends State<AccountPage> {
 }
 
 class AccountSwitcher extends StatelessWidget {
-  const AccountSwitcher({Key? key,bool? switchorlogin}) : super(key: key);
+  const AccountSwitcher({Key? key, bool? switchorlogin}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return AlertDialog(
-      title: Text('Accounts'),
-      content: ListView.builder(
-        itemCount: accountlist.length,
-        itemBuilder: (BuildContext context, int index) {
-          return GestureDetector(
-            child: SizedBox(
-              width: double.infinity,
-              height: 40,
-              child: Row(
-                children: [
-                  Icon(Icons.account_circle_rounded),
-                  Padding(padding: EdgeInsets.only(left: 10)),
-                  Flexible(
-                    child: Text(
-                      accountlist[index]['nama'],
-                      style: TextStyle(fontSize: 20),
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            onTap: () {
-              selectedIndex = index;
-              showDialog(
-                context: context,
-                builder: (BuildContext dialogContext) {
-                  return PasswordPrompt();
-                },
-              );
-            },
-          );
-        },
-      ),
-    );
+    return PasswordPrompt();
+    // return GestureDetector(
+    //   child: SizedBox(
+    //     width: double.infinity,
+    //     height: 40,
+    //     child: Row(
+    //       children: [
+    //         Icon(Icons.account_circle_rounded),
+    //         Padding(padding: EdgeInsets.only(left: 10)),
+    //         Flexible(
+    //           child: Text(
+    //             LOGIN,
+    //             style: TextStyle(fontSize: 20),
+    //             overflow: TextOverflow.ellipsis,
+    //           ),
+    //         ),
+    //       ],
+    //     ),
+    //   ),
+    //   onTap: () {
+    //     showDialog(
+    //       context: context,
+    //       builder: (BuildContext dialogContext) {
+    //         return PasswordPrompt();
+    //       },
+    //     );
+    //   },
+    // );
   }
 }
 
+TextEditingController mailTf = TextEditingController();
 TextEditingController passTf = TextEditingController();
 
 class PasswordPrompt extends StatelessWidget {
@@ -188,6 +185,14 @@ class PasswordPrompt extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           TextField(
+            controller: mailTf,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Email',
+            ),
+          ),
+          TextField(
+            obscureText: true,
             controller: passTf,
             decoration: InputDecoration(
               border: OutlineInputBorder(),
@@ -195,22 +200,40 @@ class PasswordPrompt extends StatelessWidget {
             ),
           ),
           ElevatedButton(
-            onPressed: () {
-              if (accountlist[selectedIndex!]['password']
-                      .compareTo(passTf.text) ==
-                  0) {
-                usernamenya = accountlist[selectedIndex!]['nama'];
-                loggedIn = true;
-                saveToLocal(accountlist[selectedIndex!]['nama']);
+            onPressed: () async {
+              await service.signIn(email: mailTf.text, password: passTf.text);
+              if (service.getUserData() != 'null') {
                 Navigator.of(context).pushAndRemoveUntil(
                     MaterialPageRoute(builder: (context) => PageOne()),
                     (Route<dynamic> route) => false);
-              } else {
-                print('WRONG PASS!');
               }
+              // if (accountlist[selectedIndex!]['password']
+              //         .compareTo(passTf.text) ==
+              //     0) {
+              //   usernamenya = accountlist[selectedIndex!]['nama'];
+              //   loggedIn = true;
+              //   saveToLocal(accountlist[selectedIndex!]['nama']);
+              //   Navigator.of(context).pushAndRemoveUntil(
+              //       MaterialPageRoute(builder: (context) => PageOne()),
+              //       (Route<dynamic> route) => false);
+              // } else {
+              //   print('WRONG PASS!');
+              // }
             },
             child: Text('Login'),
-          )
+          ),
+          ElevatedButton(
+            onPressed: () {
+              service.signUp(email: mailTf.text, password: passTf.text);
+            },
+            child: Text('Sign Up'),
+          ),
+          // ElevatedButton(
+          //   onPressed: () {
+          //     service.signOut();
+          //   },
+          //   child: Text('Sign Out'),
+          // )
         ],
       ),
     );

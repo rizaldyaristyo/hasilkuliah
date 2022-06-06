@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "338717647096",
+    "project_id": "kegiatanone-praktikum",
+    "storage_bucket": "kegiatanone-praktikum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338717647096:android:fb182d3be41a24782f9b0d",
+        "android_client_info": {
+          "package_name": "com.example.kegiatanone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338717647096-cc9387f36f875qefjlfjph5b8hgek9m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL-LL-QI7FhafLd_toQ7Cz8QlRe-wLqLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338717647096-cc9387f36f875qefjlfjph5b8hgek9m7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

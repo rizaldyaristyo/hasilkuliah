@@ -1,8 +1,12 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:kegiatantwo/accountpage.dart';
 import 'package:kegiatantwo/preferences.dart';
 import 'package:kegiatantwo/bottomnavbar.dart';
+import 'auth.dart';
+
+AuthenticationService service = AuthenticationService(FirebaseAuth.instance);
 
 class PageOne extends StatefulWidget {
   const PageOne({Key? key}) : super(key: key);
@@ -36,6 +40,13 @@ class _PageOneState extends State<PageOne> {
                   ),
                 ),
                 Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: const Icon(Icons.edit_notifications, size: 26.0),
+                  ),
+                ),
+                Padding(
                   padding: const EdgeInsets.only(right: 20.0, left: 5.0),
                   child: GestureDetector(
                     onTap: () {
@@ -54,7 +65,7 @@ class _PageOneState extends State<PageOne> {
                 child: Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    'Good Afternoon ' + usernamenya! + ' !',
+                    'Good Afternoon ' + service.getEmail() + ' !',
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -70,7 +81,7 @@ class _PageOneState extends State<PageOne> {
                     height: 180,
                     color: abuabu,
                     child: Image.network(
-                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYztjfKWOhRiNJqGfRse9DDwe_1tCeqo-HYHtsSl9qFZ6smHaXd05URuB6vTfHNP0BhY&usqp=CAU',
+                        'https://picsum.photos/1280/720?random=$i',
                         fit: BoxFit.cover),
                   ),
                   Row(children: [
@@ -79,7 +90,7 @@ class _PageOneState extends State<PageOne> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(30.0),
                         child: Image.network(
-                            'https://cutewallpaper.org/22/halloween-profile-pictures-wallpapers/1333125595.jpg',
+                            'https://picsum.photos/200/200?random=$i',
                             height: 35.0,
                             width: 35.0),
                       ),
