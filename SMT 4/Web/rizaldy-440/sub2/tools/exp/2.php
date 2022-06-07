@@ -35,15 +35,15 @@
     $website = $_POST["website"];
     $feedback = $_POST["feedback"];
     $age = $_POST["age"];
-    $t1 = $_POST["t1"];
-    $t2 = $_POST["t2"];
+    $t1 = $_POST["t1"] ?? " ";
+    $t2 = $_POST["t2"] ?? " ";
 
     class TheParent{
       function f1(){
         echo "Name: ".$GLOBALS['name'];
       }
       function f2(){
-        echo "<br>Age: ".$GLOBALS['age']."<br>Topics Selected: ".$GLOBALS['t1']." ".$GLOBALS['t2']." ".$GLOBALS['t3'];
+        echo "<br>Age: ".$GLOBALS['age']."<br>Topics Selected: ".$GLOBALS['t1']." ".$GLOBALS['t2'];
       }
     }
 
