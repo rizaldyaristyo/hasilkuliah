@@ -24,6 +24,7 @@
     echo "<h1>";
     foreach(explode(' ',$text) as $x) echo $x." ";
     echo "</h1>";
+    //echo var_dump(explode(' ',$text));
     ?>
     <div class="center" style="width:fit-content;border: solid;border-radius: 5px;border-color: black;background-color:black;">
         <form action="2.php" method="post" style="font-size: x-large;">
