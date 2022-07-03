@@ -1,15 +1,27 @@
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+// Pages
+import 'main.dart';
+import 'pageone.dart';
+import 'pagetwo.dart';
+import 'pagethree.dart';
+import 'pagefour.dart';
+import 'pagefive.dart';
+import 'accountpage.dart';
+import 'loginpage.dart';
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
 initializaNotification() async {
   final fcm = FirebaseMessaging.instance;
-  debugPrint(
-      "The Token: ${(await FirebaseMessaging.instance.getToken())}");
+  debugPrint("The Token: ${(await FirebaseMessaging.instance.getToken())}");
 
   try {
     if (Platform.isIOS) {
@@ -27,11 +39,56 @@ initializaNotification() async {
   FirebaseMessaging.onMessage.listen(_onMessage);
   FirebaseMessaging.onBackgroundMessage(_onBackgroundMessage);
   FirebaseMessaging.onMessageOpenedApp.listen(_onOpened);
+  // FirebaseMessaging.instance.setForegroundNotificationPresentationOptions(
+  //   alert: true,
+  //   badge: true,
+  //   sound: true,
+  // );
 
   final message = await fcm.getInitialMessage();
   if (message != null) {
-    final data = message.data;
-    debugPrint("INIT: $data");
+    int id =
+        int.parse(message.data.toString().replaceAll(RegExp(r'[^0-9]'), ''));
+    debugPrint("ONENTRY: $id");
+    try {
+      switch (id) {
+        case 0: //TO RELOG
+          AuthenticationService service =
+              AuthenticationService(FirebaseAuth.instance);
+          service.signOut();
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const Login(), maintainState: false));
+          break;
+        case 1: //TO PAGE ONE
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const PageOne(), maintainState: false));
+          break;
+        case 2: //TO PAGE TWO
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const PageTwo(), maintainState: false));
+          break;
+        case 3: //TO PAGE THREE
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const PageThree(), maintainState: false));
+          break;
+        case 4: //TO PAGE FOUR
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const PageFour(), maintainState: false));
+          break;
+        case 5: //TO PAGE FIVE
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const PageFive(), maintainState: false));
+          break;
+        case 6: //TO ACCOUNT PAGE
+          Navigator.of(globalContext).push(MaterialPageRoute(
+              builder: (_) => const AccountPage(), maintainState: false));
+          break;
+        default:
+      }
+    } catch (e) {
+      debugPrint("EXCEPTION THROWN!");
+      Login();
+    }
   }
 }
 
@@ -64,8 +121,47 @@ Future<void> _onBackgroundMessage(RemoteMessage message) async {
 }
 
 void _onOpened(RemoteMessage message) {
-  final data = message.data;
-  debugPrint("ONOPENED: $data");
+  int id = int.parse(message.data.toString().replaceAll(RegExp(r'[^0-9]'), ''));
+  debugPrint("ONENTRY: $id");
+  try {
+    switch (id) {
+      case 0: //TO RELOG
+        AuthenticationService service =
+            AuthenticationService(FirebaseAuth.instance);
+        service.signOut();
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const Login(), maintainState: false));
+        break;
+      case 1: //TO PAGE ONE
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const PageOne(), maintainState: false));
+        break;
+      case 2: //TO PAGE TWO
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const PageTwo(), maintainState: false));
+        break;
+      case 3: //TO PAGE THREE
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const PageThree(), maintainState: false));
+        break;
+      case 4: //TO PAGE FOUR
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const PageFour(), maintainState: false));
+        break;
+      case 5: //TO PAGE FIVE
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const PageFive(), maintainState: false));
+        break;
+      case 6: //TO ACCOUNT PAGE
+        Navigator.of(globalContext).push(MaterialPageRoute(
+            builder: (_) => const AccountPage(), maintainState: false));
+        break;
+      default:
+    }
+  } catch (e) {
+    debugPrint("EXCEPTION THROWN!");
+    Login();
+  }
 }
 
 const AndroidNotificationChannel channel = AndroidNotificationChannel(

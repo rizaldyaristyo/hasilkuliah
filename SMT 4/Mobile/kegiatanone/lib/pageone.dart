@@ -6,6 +6,8 @@ import 'package:kegiatantwo/preferences.dart';
 import 'package:kegiatantwo/bottomnavbar.dart';
 import 'auth.dart';
 
+var globalContext;
+
 AuthenticationService service = AuthenticationService(FirebaseAuth.instance);
 
 class PageOne extends StatefulWidget {
@@ -17,6 +19,7 @@ class PageOne extends StatefulWidget {
 class _PageOneState extends State<PageOne> {
   @override
   Widget build(BuildContext context) {
+    globalContext = context;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(

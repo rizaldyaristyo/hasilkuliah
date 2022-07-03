@@ -6,6 +6,7 @@ import 'package:kegiatantwo/pagetwo.dart';
 import 'package:kegiatantwo/pagethree.dart';
 import 'package:kegiatantwo/pagefour.dart';
 import 'package:kegiatantwo/pagefive.dart';
+//import 'package:kegiatantwo/videos/pages/videolist.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);

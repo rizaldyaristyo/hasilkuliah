@@ -1,10 +1,14 @@
 // ignore_for_file: prefer_const_constructors, duplicate_ignore, avoid_print
 
+import 'dart:convert';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:kegiatantwo/pageone.dart';
 import 'package:kegiatantwo/preferences.dart';
+import 'package:kegiatantwo/videos/services/videoservice.dart';
+import 'package:provider/provider.dart';
 import 'loginpage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'firebase_options.dart';
@@ -34,6 +38,23 @@ Future<void> main() async {
     putih = Colors.black;
     hitam = Colors.white60;
   }
-  runApp(
-      MaterialApp(home: service.getUserData() == 'null' ? Login() : PageOne()));
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider<VideoService>(
+          create: (context) => VideoService(),
+        )
+      ],
+      child: MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: service.getUserData() == 'null' ? Login() : PageOne()),
+    );
+  }
 }
