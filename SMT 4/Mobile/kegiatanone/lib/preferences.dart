@@ -5,6 +5,8 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'artikelsapi.dart';
+
 bool? darkmode = true;
 bool? loggedIn = false;
 String? usernamenya = '';
@@ -13,6 +15,9 @@ Color? abuabu700 = Colors.grey[700];
 Color? abuabu = Colors.grey;
 Color? putih = Colors.white;
 Color? hitam = Colors.white10;
+
+String? token = '';
+String? apiURL = "https://10.42.0.1";
 
 Future<void> saveToLocal(String? usernamenya) async {
   final prefs = await SharedPreferences.getInstance();

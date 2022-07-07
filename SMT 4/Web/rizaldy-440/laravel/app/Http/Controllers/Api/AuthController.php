@@ -24,11 +24,9 @@ class AuthController extends Controller
             //return response()->json(['error' => 'Unauthorized'], 401);
             return redirect('/login/login-failed');
         }
-        //return $this->respondWithToken($token);
         \setcookie('token', $token, time() + (86400 * 30), "/");
-        $result = DB::select('select * from artikels');
-        $data = json_decode(json_encode($result), true);
-        return redirect('/api/v1/admin');
+        return $this->respondWithToken($token);
+        //return redirect('/api/v1/admin');
     }
     
 

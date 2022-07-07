@@ -25,17 +25,17 @@ class JWTMiddle
             try{
                 $user = JWTAuth::parseToken()->authenticate();
             }catch(TokenExpiredException $e){
-                return redirect('/login');
+                return redirect('/login?tokenexpired');
             }catch(TokenInvalidException $e){
-                return redirect('/login');
+                return redirect('/login?tokeninvalid');
             }catch(TokenBlacklistedException $e){
-                return redirect('/login');
+                return redirect('/login?tokenblacklisted');
             }catch(\Exception $e){
-                return redirect('/login');
+                return redirect('/login?unknown');
             }
             return $next($request);
         } else {
-            return redirect('/login');
+            return redirect('/login?notoken');
         }
     }
 }

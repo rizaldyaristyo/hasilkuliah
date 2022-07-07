@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
+import 'package:kegiatantwo/artikelslist.dart';
 import 'package:kegiatantwo/preferences.dart';
 import 'package:kegiatantwo/pageone.dart';
 import 'package:kegiatantwo/pagetwo.dart';
@@ -28,7 +29,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
             break;
           case 1:
             Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(builder: (context) => PageTwo()),
+                MaterialPageRoute(builder: (context) => ArtikelsList()),
                 (Route<dynamic> route) => false);
             break;
           case 2:

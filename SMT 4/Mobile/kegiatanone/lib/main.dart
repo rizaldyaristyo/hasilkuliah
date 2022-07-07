@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, duplicate_ignore, avoid_print
 
-import 'dart:convert';
-
+import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +15,7 @@ import 'package:kegiatantwo/auth.dart';
 import 'package:kegiatantwo/notification_handler.dart';
 
 Future<void> main() async {
+  HttpOverrides.global = MyHttpOverrides();
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await initializaNotification();
@@ -56,5 +56,13 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           home: service.getUserData() == 'null' ? Login() : PageOne()),
     );
+  }
+}
+
+class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext? context){
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port)=> true;
   }
 }
