@@ -1,0 +1,1 @@
+[{'role': 'teacher', 'username': 'ari', 'password': 'ari123', 'nama': 'Ari', 'nilai_uh_1': 0, 'nilai_uh_2': 0, 'nilai_uh_3': 0, 'nilai_uas': 0}, {'role': 'student', 'username': 'upi', 'password': 'upi123', 'nama': 'Upi', 'nilai_uh_1': 85, 'nilai_uh_2': 90, 'nilai_uh_3': 95, 'nilai_uas': 100}]
