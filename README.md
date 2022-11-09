@@ -1,4 +1,4 @@
-<h1 align="center">hasilkuliah ARSTCreations</h1>
+<h1 align="center">Hasil Koding Kuliah - Rizaldy Aristyo</h1>
 <h3 align="center">Kodingan Kuliah Pemrograman, yang bakal we update berkala</h3>
 <br>
 
