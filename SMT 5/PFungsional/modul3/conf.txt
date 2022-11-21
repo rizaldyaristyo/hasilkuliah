@@ -1,1 +1,1 @@
-{'exam_attempt_left': 3, 'last_date': '30-01-2020'}
+{'exam_attempt_left': 3, 'last_date': 'a'}
