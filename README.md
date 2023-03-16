@@ -10,12 +10,12 @@
 </p>
    
 <p align="center">
-  🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br><b>🚫DILARANG MENYALIN!!!🚫<br>🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br>Repo ini hanya untuk keperluan edukasi dan bukan sebagai media pendukung kecurangan</b><br>
+  🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br><b>🚫DILARANG MENYALIN!!!🚫<br>🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br>Repo ini hanya untuk keperluan edukasi dan bukan sebagai media pendukung kecurangan</b><br>
 </p>
 
-<p align="center">Semester Sekarang: 5<br>2023/2024</p>
+<p align="center">Semester Sekarang: 6<br>2022/2023</p>
 
-### Tata Cara
+### Tata Krama
 🧑🏾‍💻 Pull Request Bikin Folder Baru Dengan Nama Sendiri<br>
 🙋🏾‍♂️ Open Issue Yang Relevan Mohon Link Dengan Pull Request<br>
 👍🏾 "Ekualitas". Gaada Yang Ajarin, Sama-Sama Belajar Bareng<br>
