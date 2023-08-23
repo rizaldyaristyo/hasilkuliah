@@ -1,6 +1,5 @@
 <h1 align="center">Hasil Koding Kuliah - Rizaldy Aristyo</h1>
-<h3 align="center">Kodingan Kuliah Pemrograman, yang bakal we update berkala</h3>
-<br>
+<h3 align="center">Kodingan Kuliah Pemrograman, <strike>yang bakal we update berkala</strike> yang tidak akan diupdate lagi karena praktikum yang ada ngoding nya sudah abis :)</h3>
 
 <p align="center"> 
    <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant 2.1" />
@@ -10,10 +9,15 @@
 </p>
    
 <p align="center">
-  🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br><b>🚫DILARANG MENYALIN!!!🚫<br>🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br>Repo ini hanya untuk keperluan edukasi dan bukan sebagai media pendukung kecurangan</b><br>
+  🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br><b>🚫DILARANG MENYALIN UNTUK CURANG!!!🚫<br>🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫🚫<br>Repo ini hanya untuk keperluan edukasi dan bukan sebagai media pendukung kecurangan</b><br>
 </p>
 
-<p align="center">Semester Sekarang: 6<br>2022/2023</p>
+<p align="center">
+   Semester Terakhir Update: 6<br>
+   2022/2023<br>
+</p>
+
+
 
 ### Tata Krama
 🧑🏾‍💻 Pull Request Bikin Folder Baru Dengan Nama Sendiri<br>
